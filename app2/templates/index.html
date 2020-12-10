@@ -1,0 +1,13 @@
+<html>
+<head><title>Form</title></head>
+<body>
+<form method="POST">
+ {% csrf_token %}
+<input type="text" name="name"></input> Name
+<input type="date" name="dob"></input>  DOB
+<input type="number" name="insurance_amt"></input>  Insurance Amt
+<input type="number" name="payable_amt" disabled></input>   Payable Amt
+<input type="submit" name="submit" value="Calculate"></input>
+</form>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{% block content %}
+{% load material_form %}
+<form method="POST">
+    {% csrf_token %}
+    {% form form=form %}
+    {% endform %}
+</form>
+<button type="submit" name="submit">Calculate</button>
+{% endblock %}
