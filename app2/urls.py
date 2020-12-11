@@ -7,5 +7,5 @@ from django.conf.urls import url
 from . views import viewData
   
 urlpatterns = [ 
-    path('',views.viewData),
+    path('',views.viewData,name="viewData"),
 ] 
